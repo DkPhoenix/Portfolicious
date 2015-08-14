@@ -8,12 +8,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //attach instance of handleClick to all buttons
+        findViewById(R.id.media_streamer).setOnClickListener(this);
+        findViewById(R.id.super_duo1).setOnClickListener(this);
+        findViewById(R.id.super_duo2).setOnClickListener(this);
+        findViewById(R.id.ant_terminator).setOnClickListener(this);
+        findViewById(R.id.materialize).setOnClickListener(this);
+        findViewById(R.id.capstone).setOnClickListener(this);
     }
 
     @Override
@@ -39,17 +46,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Called when the user touches the button
-     * Formats a message for a toast
+     * Called whenever a button is pressed
+     * Message is created and then calls toastMessage
      */
-    public void sendMessage(View view) {
-        //get the id of the button that was clicked
-        int temp = view.getId();
+    @Override
+    public void onClick(View view) {
         //build initial message
         String message = "This button will launch my ";
 
         //change the message sent to the toast based on the ID of the button clicked.
-        switch (temp) {
+        switch (view.getId()) {
             case R.id.media_streamer:
                 toastMessage(message + "Spotify Streamer app.");
                 break;
@@ -74,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 toastMessage(message + "capstone app.");
                 break;
         }
+
     }
 
     /**
