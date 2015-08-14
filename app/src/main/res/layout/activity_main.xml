@@ -58,10 +58,9 @@
 
     <Button
         android:id="@+id/capstone"
-        style="@style/My_Button_style"
+        style="@style/Capstone_Button"
         android:layout_below="@+id/materialize"
         android:layout_centerInParent="true"
-        android:background="#F50057"
         android:onClick="sendMessage"
         android:text="@string/capstone" />
 </RelativeLayout>

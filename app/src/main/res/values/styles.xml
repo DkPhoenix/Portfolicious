@@ -15,6 +15,10 @@
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
+    <style name="Capstone_Button" parent="My_Button_style">
+        <item name="android:background">#F50057</item>
+    </style>
+
     <!-- old code keeping for learning purposes.
         <dimen name="buttonHeight">40dp</dimen>
         <dimen name="buttonWidth">40dp</dimen>
