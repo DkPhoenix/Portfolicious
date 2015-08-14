@@ -12,7 +12,7 @@
         android:paddingBottom="30dp"
         android:paddingTop="10dp"
         android:text="@string/my_title"
-        android:textColor="#607D8B"
+        android:textColor="@color/cust_lightblue"
         android:textSize="25dp" />
 
     <Button
