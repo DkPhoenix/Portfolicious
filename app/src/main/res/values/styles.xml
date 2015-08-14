@@ -5,4 +5,18 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="My_Button_style">
+        <item name="android:layout_width">225dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">#F08C35</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- old code keeping for learning purposes.
+        <dimen name="buttonHeight">40dp</dimen>
+        <dimen name="buttonWidth">40dp</dimen>
+    -->
 </resources>
